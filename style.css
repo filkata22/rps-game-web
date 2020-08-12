@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game {
+    height: 100vh;
+    font-family: sans-serif;
+    background-color: rgb(39, 41, 68);
+}
+
+.score{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.score h1,p{
+    font-size: 25px;
+    color: rgb(224, 224, 224);
+}
+
+.intro{
+    transform: translate(0,20%);
+    color: rgb(224, 224, 224);
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: opacity 0.5s ease;
+}
+
+.intro h1{
+    font-size: 30px;
+}
+.intro button{
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+    color: rgb(224, 224, 224);
+    background-color: #848ccf ;
+    box-shadow: 0 15px 35px rgba(0,0,0,.2);
+    border-radius: 5px;
+}
+
+.match{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-65%);
+   transition: opacity 0.5s ease 0.5s;
+}
+
+.match .winner{
+    font-size: 30px;
+    color: rgb(224, 224, 224);
+    text-align: center;
+}
+.options{
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+}
+.match button{
+    margin-left: 11.5%;
+    margin-right: 2.5%;
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    color:  rgb(224, 224, 224);
+    background-color: #848ccf ;
+    box-shadow: 0 15px 35px rgba(0,0,0,.2);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.hands{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.playerHand{
+    transform: rotateY(180deg);
+}
+
+
+div.fadeOut{
+    pointer-events: none;
+    opacity: 0;
+}
+
+div.fadeIn{
+    pointer-events: all;
+    opacity: 1;
+    
+}
+
+
+@keyframes playerHandAnimation {
+    0%   {transform: translate(0%,-20%) rotateY(180deg);}
+    10%  {transform: translate(0%,-0%) rotateY(180deg);}
+    20%  {transform: translate(0%,-20%) rotateY(180deg);}
+    30%  {transform: translate(0%,-0%) rotateY(180deg);}
+    40% {transform: translate(0%,-20%) rotateY(180deg);}
+    50%  {transform: translate(0%,-0%) rotateY(180deg);}
+    60%   {transform: translate(0%,-20%) rotateY(180deg);}
+    70%  {transform: translate(0%,-0%) rotateY(180deg);}
+    80%  {transform: translate(0%,-20%) rotateY(180deg);}
+    90%  {transform: translate(0%,-0%) rotateY(180deg);}
+    100% {transform: translate(0%,-20%) rotateY(180deg);}
+  }
+
+@keyframes computerHandAnimation {
+    0%   {transform: translate(0%,-20%) ;}
+    10%  {transform: translate(0%,-0%) ;}
+    20%  {transform: translate(0%,-20%) ;}
+    30%  {transform: translate(0%,-0%) ;}
+    40% {transform: translate(0%,-20%) ;}
+    50%  {transform: translate(0%,-0%) ;}
+    60%   {transform: translate(0%,-20%) ;}
+    70%  {transform: translate(0%,-0%) ;}
+    80%  {transform: translate(0%,-20%) ;}
+    90%  {transform: translate(0%,-0%) ;}
+    100% {transform: translate(0%,-20%) ;}
+  }
+
+  
+
+
